@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="/fragments/head :: head"></head> 
+
+
+
+    <body>
+
+        <section>
+            <div class="contenedor">
+                <div class="contenedor_contenido">
+                    <div class="contenedor_saludo" id="saludo">
+
+                        <h3 th:if="${session.usuariosession != null}" th:text="${'Bienvenido ' + session.usuariosession.usuario}"></h3>
+
+                        
+                        <button type="submit" sec:authorize="hasRole('ROLE_ADMIN')">
+                            <a class="titulo_boton" th:href="@{/crearUsuario}">Crear nuevo usuario</a>
+                        </button>
+                        
+                        <button type="submit">
+                            <div class="loader" id="loader"></div>
+                            <a class="titulo_boton" th:href="@{/autor}">Administrar autores</a>
+                        </button>
+                        <button type="submit">
+                            <div class="loader" id="loader"></div>
+                            <a class="titulo_boton" th:href="@{/editorial}">Administrar editoriales</a>
+                        </button>
+                        <button type="submit">
+                            <div class="loader" id="loader"></div>
+                            <a class="titulo_boton" th:href="@{/libro}">Administrar libros</a>
+                        </button>
+                        <button type="submit">
+                            <div class="loader" id="loader"></div>
+                            <a class="titulo_boton" th:href="@{/socio}">Administrar socios</a>
+                        </button>
+                        <button type="submit">
+                            <div class="loader" id="loader"></div>
+                            <a class="titulo_boton" th:href="@{/prestamo}">Registrar préstamos</a>
+                        </button>
+                        <button type="submit">
+                            <div class="loader" id="loader"></div>
+                            <a class="titulo_boton" th:href="@{/logout}">Salir</a>
+                        </button>
+
+                        <p class="error_logueo" th:if="${error != null}" th:text="${error}"></p>
+                        <p class="confirmacion" th:if="${confirmacion != null}" th:text="${confirmacion}"></p>
+
+                    </div>
+                </div>
+                <div class="contenedor_img">
+                    <img th:src="@{/libro.jpg}" alt="Libros">
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

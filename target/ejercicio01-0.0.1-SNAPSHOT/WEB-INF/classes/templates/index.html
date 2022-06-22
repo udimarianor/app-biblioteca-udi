@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    
+    <head th:replace="/fragments/head :: head"></head>
+    
+    <body>
+        <section>
+            <div class="contenedor">
+                <div class="contenedor_contenido">
+                    <div class="contenedor_saludo" id="saludo">
+                        <h2>Bienvenidos a la biblioteca</h2>
+                        <button type="submit">
+                            <div class="loader" id="loader"></div>
+                            <a class="titulo_boton" th:href="@{/login}">Inicio de sesión</a>
+                        </button>
+                    </div>
+                    <p class="error_logueo" th:if="${logout != null}" th:text="${logout}" style="color: green;"></p>
+                </div>
+                <div class="contenedor_img">
+                    <img th:src="@{/libro.jpg}" alt="Libros">
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

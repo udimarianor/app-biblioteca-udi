@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    
+    <head th:replace="/fragments/head01 :: head01"></head>
+    
+    <body>
+        
+        <header th:replace="/fragments/header :: headerGeneral"></header>
+        
+        <section>
+
+            <div class="contenedor">
+
+                <div class="contenedor_contenido">
+
+                    <div class="contenedor_contenido_titulo">
+                        <h2>Administración de préstamos</h2>
+                        <p>Utilice este módulo para prestar libros a los socios.</p>
+                        <hr>
+                        <p class="error_logueo" th:if="${error != null}" th:text="${error}"></p>
+                        <p class="confirmacion" th:if="${confirmacion != null}" th:text="${confirmacion}"></p>
+                    </div>
+
+                    <div class="contenedor_menu">
+
+                        <div class="contenedor_submenu_1">
+
+                            <form class="form_libro" th:action="@{/prestamo/guardarPrestamo}" method="POST" id="filtro_autores">
+
+                                <h3>Carga de préstamos</h3>
+                                
+                                <select id="nombreAutor" class="nombreAutor" name="socio">
+                                    <option th:each="s : ${socios}" th:text="${s.nombre+' '+s.dni}" th:value="${s.id}"></option>
+                                </select>
+
+                                <select id="nombreAutor" class="nombreAutor" name="libro">
+                                    <option th:each="l : ${libros}" th:text="${l.titulo+' '+l.id}" th:value="${l.id}"></option>
+                                </select>
+              
+                                <button type="submit">
+                                    <span class="titulo_boton">Guardar</span>
+                                </button>
+                            </form>                         
+
+                        </div>
+
+                        <div class="contenedor_submenu_2">
+
+                            <form class="form_libro" th:action="@{/prestamo/buscarPrestamo}" method="GET">
+                                <h3>Búsqueda de préstamos</h3>
+                                
+                                <select id="nombreAutor" class="nombreAutor" name="socio">
+                                    <option th:each="s : ${socios}" th:text="${s.nombre+' '+s.dni}" th:value="${s.id}"></option>
+                                </select>
+                                
+                                <button type="submit">
+                                    <span class="titulo_boton">Buscar</span>
+                                </button>
+                            </form>              
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    
+    <head th:replace="/fragments/head :: head"></head>
+    
+    <body>
+        <section>
+            <div class="contenedor">
+                <div class="contenedor_contenido">
+                    <div class="contenedor_formulario">
+                        <h2>Crear usuario</h2>
+                        <form id="form_login" th:action="@{/guardarUsuario}" method="POST">
+                            <div class="input">
+                                <span>Usuario</span>
+                                <input type="text" name="usuario" id="" class="usuario" required/>
+                            </div>
+                            <div class="input">
+                                <span>Contraseña</span>
+                                <input type="password" name="contrasenia" id="" class="contrasenia" required/>
+                            </div>
+                            <div class="input">
+                                <span>Repita la contraseña</span>
+                                <input type="password" name="contrasenia1" id="" class="contrasenia" required/>
+                            </div>
+                            <div class="input">
+                                <span>Email</span>
+                                <input type="email" name="email" id="" class="contrasenia" required/>
+                            </div>
+                            <div class="input">
+                                <button type="submit">
+                                    <div class="loader" id="loader"></div>
+                                    <span class="titulo_boton">Ingresar</span>
+                                </button>
+                                
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="contenedor_img">
+                    <img th:src="@{/libro.jpg}" alt="Libros">
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

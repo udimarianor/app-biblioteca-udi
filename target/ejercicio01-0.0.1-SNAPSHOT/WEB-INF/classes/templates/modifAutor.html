@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    
+    <head th:replace="/fragments/head01 :: head01"></head>
+    
+    <body>
+        
+        <header th:replace="/fragments/header :: headerAutores"></header>
+        
+        <section>
+            <div class="contenedor">
+                <div class="contenedor_contenido">
+                    <div class="contenedor_contenido_titulo">
+                        <h2>Modificación de autores</h2>
+                        <p>Ingrese los datos nuevos del autor a modificar</p>
+                        <hr>
+                    </div>
+                    <div class="contenedor_modificacion">
+                        <form id="modificacion_autores" th:action="@{/autor/guardarModif}" method="POST">
+                            <div class="input">
+                                <input type="hidden" name="id" id="id" th:value="${autor.id}"/>
+                                <input type="text" name="nombreAutor" th:value="${autor.nombre}" id="" class="nombreAutor" required placeholder="Nombre y/o apellido"/>
+                                <button type="submit">
+                                    <span class="titulo_boton">Guardar</span>
+                                </button>
+                                <p class="error_logueo" th:if="${error != null}" th:text="${error}"></p>
+                                <p class="confirmacion" th:if="${confirmacion != null}" th:text="${confirmacion}"></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>	
+    </body>
+</html>

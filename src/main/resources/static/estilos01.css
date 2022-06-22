@@ -1,0 +1,315 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body, header {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+}
+
+section {
+    width: 100%;
+    /*height: 100vh;*/
+    padding: 0vw 4vw 4vw 4vw;
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+}
+
+.navbar {
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    line-height: normal;
+    font-size: 1.0em;
+    transition: all 500ms ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar p {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    transition: all 500ms ease;
+    border-bottom: 3px solid transparent;
+}
+
+.navbar a:hover {
+    color: lightgrey;
+    border: solid transparent;
+    border-bottom: 3px solid lightgrey;
+}
+
+.contenedor {
+    background: #fff;
+    width: 100%;
+    min-height: 85vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+
+.contenedor_contenido {
+    display: flex;
+    width: 80%;
+    min-height: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 2vw 0vw;
+}
+
+.contenedor_contenido_titulo {
+    width: 100%;
+}
+
+.contenedor_formulario {
+    width: 100%;
+}
+
+.contenedor_contenido h2 {
+    color: grey;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    /*border-bottom: 3px solid #941cc7;*/
+    display: inline-block;
+}
+
+.contenedor_contenido h3 {
+    color: grey;
+    font-weight: 400;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    /*border-bottom: 3px solid #941cc7;*/
+    display: inline-block;
+    align-self: self-start;
+}
+
+.contenedor_contenido hr {
+    margin-top: 20px;
+}
+
+/*.contenedor_contenido p {
+    margin-top: 30px;
+}*/
+
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input span, .form_libro span {
+    font-size: 1em;
+    display: inline;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.input input, .input button, .form_libro button, .form_libro input, #nombreAutor {
+    padding: 12px 20px;
+    font-weight: 500;
+    border: 1px solid rgb(211, 210, 210);
+    font-size: 1em;
+    letter-spacing: 1px;
+    color: #575f63;
+    background: #f5f4f4;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.input input {
+    width: 60%;
+}
+
+.form_libro input, #nombreAutor {
+    width: 100%;
+}
+
+.input button, .form_libro button {
+    width: 35%;
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.form_libro button {
+    width: 100%;
+    margin-bottom: 3vw;
+}
+
+.form_libro a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+/*TABLA DE RESULTADOS DE BÚSQUEDA*/
+table {
+    background-color: #fff;
+    width: 120%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 2vw;
+}
+
+td {
+    border-bottom: solid 1px lightgrey;
+}
+
+thead {
+    background: linear-gradient(to right, #4776E6 0%, #8E54E9 51%, #4776E6 100%);
+    color: #fff;
+}
+
+/*tr:nth-child(even) {
+        background-color: lightgray;
+}*/
+
+tr:hover td{
+    background-color: lightgrey;
+    color: #darkgrey;
+}
+
+tr .botonModif {
+    background-color: #4776E6;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+tr .botonBaja {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.error_logueo {
+    color: #ff0000;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+.confirmacion {
+    color: #00bb2d;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 30px;
+}
+
+.contenedor_menu {
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+    justify-content: space-around;
+}
+
+.contenedor_submenu_1 {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: inherit;
+}
+
+.contenedor_submenu_2 {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.contenedor_submenu form {
+    /*margin-top: 5vw;*/
+}
+
+.form_libro {
+    width: 90%;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*justify-content: space-between;*/   
+}
+
+
+@media (max-width: 600px) {
+
+    .input {
+        display: inline;
+        justify-content: space-around;
+    }
+
+    .input input, .input button {
+        width: 100%;
+    }
+
+    table{
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .contenedor_menu {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .contenedor_submenu_1, .contenedor_submenu_2 {
+        width: 100%;
+    }
+    
+    .contenedor_submenu_2 {
+        margin-top: 30px;
+    }
+
+}

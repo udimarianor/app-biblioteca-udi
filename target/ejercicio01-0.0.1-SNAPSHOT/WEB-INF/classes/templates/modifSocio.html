@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    
+    <head th:replace="/fragments/head01 :: head01"></head>
+   
+    <body>
+        
+        <header th:replace="/fragments/header :: headerSocios"></header>
+        
+        <section>
+
+            <div class="contenedor">
+
+                <div class="contenedor_contenido">
+
+                    <div class="contenedor_contenido_titulo">
+                        <h2>Modificación de socio</h2>
+                        <p>Ingrese los datos requeridos para el socio seleccionado.</p>
+                        <hr>
+                    </div>
+
+                    <div class="contenedor_menu">
+
+                        <div class="contenedor_submenu">
+
+                            <div class="form_libro">
+                           
+                                <form th:action="@{/socio/guardarModif}" method="POST" th:object="${socio}" id="filtro_autores">
+                                    <input type="hidden" th:field="*{id}"/>
+                                    <input type="text" th:field="*{nombre}" class="nombreAutor" required placeholder="Nombre y apellido"/>
+                                    <input type="number" th:field="*{dni}" class="nombreAutor" required placeholder="DNI"/>
+                                    <input type="email" th:field="*{email}" class="nombreAutor" required placeholder="Email"/>
+
+                                    
+
+                                    <button type="submit">
+                                        <span class="titulo_boton">Guardar</span>
+                                    </button>
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
