@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.spring.ejercicio01.Ejercicio01ApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.949 s - in com.spring.ejercicio01.Ejercicio01ApplicationTests

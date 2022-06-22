@@ -1,28 +1,28 @@
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\repositorios\LibroRepositorio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\controladores\PrestamoControlador.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\repositorios\EditorialRepositorio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\seguridad\SeguridadConf.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\controladores\LibroControlador.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\entidades\Autor.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\servicios\AutorServicio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\servicios\LibroServicio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\entidades\Libro.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\entidades\Usuario.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\servicios\UsuarioServicio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\repositorios\UsuarioRepositorio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\servicios\SocioServicio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\enums\Role.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\controladores\SocioControlador.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\controladores\AutorControlador.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\servicios\PrestamoServicio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\entidades\Editorial.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\servicios\EditorialServicio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\controladores\EditorialControlador.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\controladores\UsuarioControlador.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\entidades\Socio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\repositorios\AutorRepositorio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\Ejercicio01Application.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\repositorios\PrestamoRepositorio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\repositorios\SocioRepositorio.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\entidades\Prestamo.java
-C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\Desarrollo\proyectos no desplegados\ejercicio01\src\main\java\com\spring\ejercicio01\errores\ServiciosError.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\servicios\PrestamoServicio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\controladores\UsuarioControlador.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\entidades\Usuario.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\repositorios\LibroRepositorio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\Ejercicio01Application.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\entidades\Libro.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\entidades\Autor.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\entidades\Prestamo.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\entidades\Socio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\repositorios\UsuarioRepositorio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\repositorios\EditorialRepositorio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\servicios\LibroServicio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\entidades\Editorial.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\repositorios\SocioRepositorio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\servicios\EditorialServicio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\servicios\AutorServicio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\repositorios\AutorRepositorio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\controladores\AutorControlador.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\controladores\LibroControlador.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\seguridad\SeguridadConf.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\controladores\EditorialControlador.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\enums\Role.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\controladores\PrestamoControlador.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\controladores\SocioControlador.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\errores\ServiciosError.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\servicios\UsuarioServicio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\repositorios\PrestamoRepositorio.java
+C:\Users\MUdi\OneDrive - DRUIDICS SOLUCIONES INFORMATICAS S.R.L\Documentos\GitHub\app-biblioteca-udi\src\main\java\com\spring\ejercicio01\servicios\SocioServicio.java
