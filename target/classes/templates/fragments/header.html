@@ -1,0 +1,61 @@
+      
+<header th:fragment="headerGeneral">
+    <div class="navbar">
+        
+        <p th:if="${session.usuariosession != null}" th:text="${session.usuariosession.usuario}"></p>
+        <a th:href="@{/menu}">Menú</a>
+        <a th:href="@{/logout}">Logout</a>
+        
+    </div>
+</header>
+
+<header th:fragment="headerAutores">
+    <div class="navbar">
+        
+        <p th:if="${session.usuariosession != null}" th:text="${session.usuariosession.usuario}"></p>
+        <a th:href="@{/autor}">Autores</a>
+        <a th:href="@{/menu}">Menú</a>
+        
+    </div>
+</header>
+
+<header th:fragment="headerEditoriales">
+    <div class="navbar">
+        
+        <p th:if="${session.usuariosession != null}" th:text="${session.usuariosession.usuario}"></p>
+        <a th:href="@{/editorial}">Editoriales</a>
+        <a th:href="@{/menu}">Menú</a>
+        
+    </div>
+</header>
+
+<header th:fragment="headerLibros">
+    <div class="navbar">
+        
+        <p th:if="${session.usuariosession != null}" th:text="${session.usuariosession.usuario}"></p>
+        <a th:href="@{/libro}">Libros</a>
+        <a th:href="@{/menu}">Menú</a>
+        
+    </div>
+</header>
+
+<header th:fragment="headerSocios">
+    <div class="navbar">
+        
+        <p th:if="${session.usuariosession != null}" th:text="${session.usuariosession.usuario}"></p>
+        <a th:href="@{/socio}">Socios</a>
+        <a th:href="@{/menu}">Menú</a>
+        
+    </div>
+</header>
+
+<header th:fragment="headerPrestamos">
+    <div class="navbar">
+        
+        <p th:if="${session.usuariosession != null}" th:text="${session.usuariosession.usuario}"></p>
+        <a th:href="@{/prestamo}">Préstamos</a>
+        <a th:href="@{/menu}">Menú</a>
+        
+    </div>
+</header>
+

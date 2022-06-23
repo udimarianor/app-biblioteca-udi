@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+    
+    <head th:replace="fragments/head01 :: head01"></head>
+    
+    <body>
+        
+        <header th:replace="fragments/header :: headerLibros"></header>
+        
+        <section>
+
+            <div class="contenedor">
+
+                <div class="contenedor_contenido">
+
+                    <div class="contenedor_contenido_titulo">
+                        <h2>Modificación de libro</h2>
+                        <p>Ingrese los datos requeridos para el libro seleccionado.</p>
+                        <hr>
+                    </div>
+
+                    <div class="contenedor_menu">
+
+                        <div class="contenedor_submenu">
+
+                            <div class="form_libro">
+                           
+                                <form th:action="@{/libro/guardarModif}" method="POST" th:object="${libroElegido}" id="filtro_autores">
+                                    <input type="hidden" th:field="*{id}"/>
+                                    <input type="text" th:field="*{titulo}" class="nombreAutor" required placeholder="Título"/>
+                                    <input type="number" th:field="*{isbn}" class="nombreAutor" required placeholder="ISBN"/>
+                                    <input type="number" th:field="*{anio}" class="nombreAutor" required placeholder="Año"/>
+                                    <input type="number" th:field="*{ejemplares}" class="nombreAutor" required placeholder="Cantidad de Ejemplares"/>
+
+                                    <select id="nombreAutor" class="nombreAutor" th:field="*{autor}">
+                                        <option th:each="a : ${autores}" th:text="${a.nombre}" th:value="${a.id}"></option>
+                                    </select>
+
+                                    <select id="nombreAutor" class="nombreAutor" th:field="*{editorial}">
+                                        <option th:each="e : ${editoriales}" th:text="${e.nombre}" th:value="${e.id}"></option>
+                                    </select>
+
+                                    <button type="submit">
+                                        <span class="titulo_boton">Guardar</span>
+                                    </button>
+                                </form>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
