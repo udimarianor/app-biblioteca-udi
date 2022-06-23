@@ -1,1 +1,2 @@
-web: java -Dspring.profiles.active=default -Dserver.port=$PORT -jar target/*.war
+web: java -jar target/app-biblioteca-udi-1.0.0.jar
+
