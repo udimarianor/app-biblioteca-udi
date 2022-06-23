@@ -1,2 +1,2 @@
-web: java -jar target/app-biblioteca-udi-1.0.0.jar
+web: java -jar target/ejercicio01-0.0.1-SNAPSHOT.jar
 
