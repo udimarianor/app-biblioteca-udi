@@ -157,7 +157,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.spring.ejercicio01.Ejercicio01Application</mainClass>
+							<mainClass>Ejercicio01Application</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
