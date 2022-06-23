@@ -19,7 +19,7 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     private String usuario;
-    private String contraseña;
+    private String contrasenia;
     private String email;
     @Enumerated(EnumType.STRING)
     private Role rol;
@@ -43,12 +43,12 @@ public class Usuario implements Serializable {
         this.usuario = usuario;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public String getContrasenia() {
+        return contrasenia;
     }
 
-    public void setContraseña(String contraseña) {
-        this.contraseña = contraseña;
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
     }
 
     public String getEmail() {
@@ -72,7 +72,7 @@ public class Usuario implements Serializable {
         int hash = 5;
         hash = 59 * hash + Objects.hashCode(this.id);
         hash = 59 * hash + Objects.hashCode(this.usuario);
-        hash = 59 * hash + Objects.hashCode(this.contraseña);
+        hash = 59 * hash + Objects.hashCode(this.contrasenia);
         hash = 59 * hash + Objects.hashCode(this.email);
         hash = 59 * hash + Objects.hashCode(this.rol);
         return hash;
@@ -93,7 +93,7 @@ public class Usuario implements Serializable {
         if (!Objects.equals(this.usuario, other.usuario)) {
             return false;
         }
-        if (!Objects.equals(this.contraseña, other.contraseña)) {
+        if (!Objects.equals(this.contrasenia, other.contrasenia)) {
             return false;
         }
         if (!Objects.equals(this.email, other.email)) {
@@ -110,7 +110,7 @@ public class Usuario implements Serializable {
 
     @Override
     public String toString() {
-        return "Usuario{" + "id=" + id + ", usuario=" + usuario + ", contrase\u00f1a=" + contraseña + ", email=" + email + ", rol=" + rol + '}';
+        return "Usuario{" + "id=" + id + ", usuario=" + usuario + ", contrase�a=" + contrasenia + ", email=" + email + ", rol=" + rol + '}';
     }
     
     

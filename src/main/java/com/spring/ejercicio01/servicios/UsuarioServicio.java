@@ -36,7 +36,7 @@ public class UsuarioServicio implements UserDetailsService {
 
             Usuario usuarioCrear = new Usuario();
             usuarioCrear.setUsuario(usuario);
-            usuarioCrear.setContraseña(encoder.encode(contrasenia));
+            usuarioCrear.setContrasenia(encoder.encode(contrasenia));
             usuarioCrear.setEmail(email);
             usuarioCrear.setRol(Role.USER);
 
@@ -44,7 +44,7 @@ public class UsuarioServicio implements UserDetailsService {
 
             return usuarioCrear;
         } else {
-            throw new ServiciosError("Hay algún problema en el servicio crearUsuario");
+            throw new ServiciosError("Hay un problema en el servicio crearUsuario");
         }
 
     }
@@ -66,7 +66,7 @@ public class UsuarioServicio implements UserDetailsService {
             throw new ServiciosError("Las contraseñas no coinciden");
         }
         if (email.isEmpty() || email == null) {
-            throw new ServiciosError("El usuario no puede estar vacío");
+            throw new ServiciosError("El usuario no puede estar empty");
         }
         if (usuarioRepositorio.buscarUsuario(usuario) != null) {
             throw new ServiciosError("El usuario ya existe");
@@ -74,11 +74,11 @@ public class UsuarioServicio implements UserDetailsService {
         return true;
     }
 
-    public Boolean login(String usuario, String contraseña) throws ServiciosError {
+    public Boolean login(String usuario, String contrasenia) throws ServiciosError {
         Optional<Usuario> respuesta = Optional.of(usuarioRepositorio.buscarUsuario(usuario));
         if (respuesta.isPresent()) {
             Usuario objUsuario = respuesta.get();
-            if (objUsuario.getContraseña().equals(contraseña)) {
+            if (objUsuario.getContrasenia().equals(contrasenia)) {
                 return true;
                 //podría guardar los logins después...
             } else {
@@ -106,7 +106,7 @@ public class UsuarioServicio implements UserDetailsService {
             HttpSession session = attr.getRequest().getSession(true);
             session.setAttribute("usuariosession" , usuarioObj);
 
-            User user = new User(usuarioObj.getUsuario(), usuarioObj.getContraseña(), permisos);
+            User user = new User(usuarioObj.getUsuario(), usuarioObj.getContrasenia(), permisos);
             return user;
         } else {
             return null;
