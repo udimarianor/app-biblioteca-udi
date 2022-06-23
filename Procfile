@@ -1,1 +1,0 @@
-web: java -Dserver.port=40753 $JAVA_OPTS -jar target/app-biblioteca-udi-0.0.1-SNAPSHOT.jar
