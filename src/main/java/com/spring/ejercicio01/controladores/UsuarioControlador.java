@@ -29,15 +29,15 @@ public class UsuarioControlador {
             @RequestParam(required = false) String logout) {
 
         if (error != null) {
-            modelo.addAttribute("error", "Las credenciales no son válidas");
+            modelo.addAttribute("error", "Las credenciales no son correctas");
         }
         if (logout != null) {
-            modelo.addAttribute("logout", "El usuario se deslogueó con éxito");
+            modelo.addAttribute("logout", "El logout fue exitoso");
         }
         return "login.html";
     }
 
-    @PreAuthorize("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')")
+    //@PreAuthorize("hasAnyRole('ROLE_USER', 'ROLE_ADMIN')")
     @GetMapping("/menu")
     public String irMenu() {
         return "menu.html";
@@ -51,14 +51,14 @@ public class UsuarioControlador {
     }
 
     
-    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
+    //@PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @GetMapping("/crearUsuario")
     public String irCrearUsuario() {
         return "crearUsuario.html";
     }
 
     
-    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
+    //@PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @PostMapping("/guardarUsuario")
     public String botonGuardarUsuario(@RequestParam("usuario") String usuario, @RequestParam("contrasenia") String contrasenia,
             @RequestParam("contrasenia1") String contrasenia1, @RequestParam("email") String email, Model modelo) {
