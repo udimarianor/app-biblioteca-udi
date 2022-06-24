@@ -41,7 +41,7 @@ public class PrestamoServicio {
     }
 
     @Transactional(readOnly = true)
-    public List buscarPrestamosActivos() throws ServiciosError {
+    public List<Prestamo> buscarPrestamosActivos() throws ServiciosError {
         List<Prestamo> prestamosActivos = pr.buscarActivos();
         if (prestamosActivos.isEmpty()) {
             throw new ServiciosError("El socio no existe");

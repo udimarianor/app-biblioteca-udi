@@ -16,15 +16,15 @@ import org.springframework.stereotype.Repository;
 @Repository        
 public interface PrestamoRepositorio extends JpaRepository<Prestamo, Long> {
     
-    @Query ("select p from Prestamo p where p.socio like :socio and p.devuelto = false order by p.id desc")
+    @Query ("select p from Prestamo p where p.socio = :socio and p.devuelto = false order by p.id desc")
     public List<Prestamo> buscarPorSocio(@Param("socio")Socio socio); 
     
-    @Query ("select p from Prestamo p where p.libro like :libro and p.devuelto = false order by p.id desc")
+    @Query ("select p from Prestamo p where p.libro = :libro and p.devuelto = false order by p.id desc")
     public List<Prestamo> buscarPorLibro(@Param("libro")Libro libro);
     
     @Query ("select p from Prestamo p where p.devuelto = false order by p.id desc")
     public List<Prestamo> buscarActivos();
     
-    @Query ("select p from Prestamo p where p.socio like :socio and p.libro like :libro and p.devuelto = false")
+    @Query ("select p from Prestamo p where p.socio = :socio and p.libro = :libro and p.devuelto = false")
     public List<Prestamo> verificaSiExisteIgual(@Param("socio") Socio socio, @Param("libro") Libro libro);
 }

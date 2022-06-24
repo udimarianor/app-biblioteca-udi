@@ -51,7 +51,7 @@ public class LibroControlador {
     }
 
     @PostMapping("/guardarLibro")
-    public String guardadoDeLibro(@RequestParam Long isbn, @RequestParam String titulo,
+    public String guardadoDeLibro(@RequestParam Integer isbn, @RequestParam String titulo,
             @RequestParam Integer anio, @RequestParam Integer ejemplares,
             @RequestParam Autor autor, @RequestParam Editorial editorial,
             ModelMap modelo) {
@@ -82,7 +82,7 @@ public class LibroControlador {
     }
 
     @PostMapping("/guardarModif")
-    public String guardarModifString(@RequestParam Long id, @RequestParam Long isbn, @RequestParam String titulo,
+    public String guardarModifString(@RequestParam Long id, @RequestParam Integer isbn, @RequestParam String titulo,
             @RequestParam Integer anio, @RequestParam Integer ejemplares,
             @RequestParam Autor autor, @RequestParam Editorial editorial,
             ModelMap modelo) {

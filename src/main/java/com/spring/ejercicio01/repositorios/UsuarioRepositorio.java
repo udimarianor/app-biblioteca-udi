@@ -10,10 +10,10 @@ import org.springframework.data.repository.query.Param;
 
 public interface UsuarioRepositorio extends JpaRepository<Usuario, Long>{
     
-    @Query ("select u from Usuario u where u.usuario = :nombre")
+    @Query ("select u from Usuario u where u.usuario like :nombre")
     public List<Usuario> buscarPorUsuario(@Param("nombre") String usuario);
     
-    @Query ("select u from Usuario u where u.usuario = :nombre")
+    @Query ("select u from Usuario u where u.usuario like :nombre")
     public Usuario buscarUsuario(@Param("nombre") String usuario);
     
 }

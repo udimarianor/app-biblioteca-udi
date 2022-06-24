@@ -18,7 +18,7 @@ public class Libro implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private Long isbn;
+    private Integer isbn;
     private String titulo;
     private Integer anio;
     private Integer ejemplares;
@@ -35,7 +35,7 @@ public class Libro implements Serializable {
     public Libro() {
     }
 
-    public Libro(Long isbn, String titulo, Integer anio, Integer ejemplares, Autor autor, Editorial editorial) {
+    public Libro(Integer isbn, String titulo, Integer anio, Integer ejemplares, Autor autor, Editorial editorial) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.anio = anio;
@@ -44,11 +44,11 @@ public class Libro implements Serializable {
         this.editorial = editorial;
     }
 
-    public Long getIsbn() {
+    public Integer getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(Long isbn) {
+    public void setIsbn(Integer isbn) {
         this.isbn = isbn;
     }
 

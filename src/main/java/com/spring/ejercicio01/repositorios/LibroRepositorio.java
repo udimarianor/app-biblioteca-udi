@@ -18,12 +18,12 @@ public interface LibroRepositorio extends JpaRepository<Libro, Long> {
     public List<Libro> buscarPorNombre(@Param("titulo")String nombre);
     
     @Query ("select l from Libro l where l.titulo like :titulo and l.anio = :anio "
-            + "and l.autor like :autor and l.editorial like :editorial")
+            + "and l.autor = :autor and l.editorial = :editorial")
     public List<Libro> validaSiExiste(@Param("titulo")String titulo, @Param("anio")Integer anio, 
             @Param("autor")Autor autor, @Param("editorial") Editorial editorial);
     
-    @Query ("select l from Libro l where l.isbn like :isbn")
-    public List<Libro> validaIsbn(@Param("isbn")Long isbn);
+    @Query ("select l from Libro l where l.isbn = :isbn")
+    public List<Libro> validaIsbn(@Param("isbn")Integer isbn);
 
     public Optional<Libro> findById(Long id); 
     

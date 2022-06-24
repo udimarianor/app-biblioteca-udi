@@ -25,7 +25,7 @@ public class LibroServicio {
 
     public List<Libro> busquedaConNombre(String nombre) throws ServiciosError {
         if (nombre == null || nombre.isEmpty()) {
-            List<Libro> libros = libroRepositorio.findAll();
+            List<Libro> libros = (List<Libro>) libroRepositorio.findAll();
             if (libros.isEmpty()) {
                 throw new ServiciosError("No hay ningún libro cargado");
             } else {
@@ -62,7 +62,7 @@ public class LibroServicio {
         }
     }
 
-    public Boolean validaIsbn(Long isbn) throws ServiciosError {
+    public Boolean validaIsbn(Integer isbn) throws ServiciosError {
         if (libroRepositorio.validaIsbn(isbn).isEmpty()) {
             return true;
         } else {
@@ -71,7 +71,7 @@ public class LibroServicio {
     }
 
     @Transactional
-    public void cargarLibro(Long isbn, String titulo, Integer anio,
+    public void cargarLibro(Integer isbn, String titulo, Integer anio,
             Integer ejemplares, Autor autor, Editorial editorial)
             throws ServiciosError {
 
@@ -109,7 +109,7 @@ public class LibroServicio {
         return desplegableEditoriales;
     }
 
-    public void modificarLibro(Long id, Long isbn, String titulo, Integer anio,
+    public void modificarLibro(Long id, Integer isbn, String titulo, Integer anio,
             Integer ejemplares, Autor autor, Editorial editorial)
             throws ServiciosError {
 
@@ -145,12 +145,12 @@ public class LibroServicio {
         }
     }
 
-    private void validarDatos(Long isbn, String titulo, Integer anio,
+    private void validarDatos(Integer isbn, String titulo, Integer anio,
             Integer ejemplares, Autor autor, Editorial editorial)
             throws ServiciosError {
 
-        if (isbn == 0 || isbn.toString().isEmpty()) {
-            throw new ServiciosError("El isbn no puede estar vacío");
+        if (isbn == null || isbn == 0) {
+            throw new ServiciosError("El isbn no puede ser cero o inexistente");
         }
         if (titulo == null || titulo.isEmpty()) {
             throw new ServiciosError("El título no puede estar vacío");
